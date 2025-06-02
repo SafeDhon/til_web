@@ -1,0 +1,57 @@
+name: flutter_til_web
+description: "A new Flutter project."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Utility Packages
+  intl: ^0.20.2
+
+  # Web Specific
+  web: ^1.1.1
+  http: ^1.4.0
+  html: ^0.15.6
+  url_strategy: ^0.3.0
+
+  # Icons
+  cupertino_icons: ^1.0.8
+
+  # State Management
+  get: ^4.7.2
+  get_storage: ^2.1.1
+
+
+  # Firebase
+  firebase_core: ^3.13.1
+  firebase_auth: ^5.5.4
+  cloud_firestore: ^5.6.8
+  firebase_storage: ^12.4.6
+  
+  
+  
+  
+ 
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  #------------------------------- LOCAL ASSETS -------------------------------#
+  assets:
+    - assets/logos/
+    - assets/images/content/
+    - assets/images/animations/
+    - assets/icons/
+
+  #------------------------------- LOCAL FONTS -------------------------------#

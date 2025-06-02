@@ -1,0 +1,23 @@
+{
+  "flutter": {
+    "platforms": {
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "til-web-b0901",
+          "configurations": {
+            "web": "1:742829788986:web:0b953f42955a5b2544ca03",
+            "windows": "1:742829788986:web:b0fbb83a8033f9ae44ca03"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
