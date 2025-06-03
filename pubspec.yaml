@@ -20,6 +20,7 @@ dependencies:
   url_strategy: ^0.3.0
 
   # Icons
+  iconsax: ^0.0.8
   cupertino_icons: ^1.0.8
 
   # State Management
@@ -35,8 +36,6 @@ dependencies:
   
   
   
-  
- 
 
 dev_dependencies:
   flutter_test:

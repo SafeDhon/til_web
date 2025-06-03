@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_til_web/common/widgets/responsive/responsive_design.dart';
+import 'package:flutter_til_web/common/widgets/layouts/templates/site_layout.dart';
 import 'package:flutter_til_web/routes/app_routes.dart';
 import 'package:flutter_til_web/routes/routes.dart';
 import 'package:get/get.dart';
@@ -10,7 +10,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: "",
+      title: "Responsive Dashboard",
       initialRoute: TRoutes.responsiveDesignTutorialScreen,
       getPages: TAppRoute.pages,
       unknownRoute: GetPage(
@@ -29,13 +29,11 @@ class ResponsiveDesignScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SingleChildScrollView(
-        child: Padding(
-            padding: EdgeInsets.all(24),
-            child: TResponsiveWidget(
-                desktop: Desktop(), tablet: Tablet(), mobile: Mobile())),
-      ),
+    return const TSiteTemplate(
+      // useLayout: false,
+      desktop: Desktop(),
+      tablet: Tablet(),
+      mobile: Mobile(),
     );
   }
 }
